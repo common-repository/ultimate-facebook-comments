@@ -1,0 +1,227 @@
+=== Ultimate Social Comments - Email Notification & Lazy Load ===
+Contributors: infosatech
+Tags: facebook comments, comments, facebook, lazy comments, pagespeed
+Requires at least: 4.6
+Tested up to: 5.9
+Stable tag: 1.4.8
+Requires PHP: 5.6
+Donate link: http://bit.ly/2I0Gj60
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+
+🔥 Ultimate Social Comments plugin will help you to display Facebook Comments box on your website easily. You can use Facebook Comments on your posts or pages.
+
+== Description ==
+
+### The Ultimate Social Comments plugin for WordPress.
+
+If you’re running a blog of any kind, you’re probably looking to build an online community. You're targeting like-minded people who share the interests highlighted by the content on your site. In that case, Facebook Comments may help you a lot.
+
+> GDPR compliant: does not collect any user data or does not send any data to any 3rd party website
+
+#### Ultimate Social Comments - Features
+
+* Add most popular Facebook commenting system in your website.
+* **Lazy Load Facebook scripts and comments only after clicking a button or scrolling down.**
+* **Translation ready!**
+* **Live Facebook Comment Count**.
+* **Free Email Notification**.
+* Adjust number of comments, color scheme, language, width, sorting order, bg color, comments URL, comments box title etc.
+* 3 different Facebook comments loading methods.
+* Customize button label.
+* **Super Lightweight.**
+* Completely free to use with lifetime updates.
+* **Developer friendly.**
+* Mobile Ready Responsive Comment Box.
+* Direct access to Facebook Comment Moderation Tool.
+* Easily configurable with shortcodes.
+* Compatible with **Page Builders like Elementor** etc.
+* Ability to disable WordPress native comment system.
+* Compatible with other Facebook sharing plugin.
+* Follows the best WordPress coding standards.
+
+Like the Ultimate Social Comments plugin? Consider leaving a [5 star review](https://wordpress.org/support/plugin/ultimate-facebook-comments/reviews/?rate=5#new-post).
+
+#### Themes Tested with this plugin and works perfect
+
+* Astra/Pro
+* OceanWP
+* Genesis Framework
+* GeneratePress
+* Zephyr
+* Impreza
+* Newspaper by tagdiv
+* Divi theme
+* Avada
+* Writing
+* Twentynineteen
+* and many more.
+
+#### Compatibility
+
+This plugin is fully compatible with WordPress Version 4.6 and beyond and also compatible with any WordPress theme.
+
+#### Support/Contribute
+
+* Active development of this plugin is handled [on GitHub](https://github.com/iamsayan/ultimate-facebook-comments).
+* Pull requests for documenting bugs are highly appreciated.
+* If you think you’ve found a bug (e.g. You’re experiencing unexpected behavior), please post on the [support forums](https://wordpress.org/support/plugin/ultimate-facebook-comments) first.
+
+== Installation ==
+
+1. Visit 'Plugins Add New'.
+1. Search for 'Ultimate Social Comments' and install it.
+1. Or you can upload the `ultimate-facebook-comments` folder to the `/wp-content/plugins/` directory manually.
+1. Activate Ultimate Social Comments from your Plugins page.
+1. After activation, go to 'FB Comments' from Settings menu.
+1. Enable options and save changes.
+
+== Frequently Asked Questions ==
+
+= Is there any admin interface for this plugin? =
+
+Yes. You can access this from 'Settings > FB Comments'.
+
+= How to use this plugin? =
+
+Go to 'Settings > FB Comments', enable/disable options as per your need and save your changes.
+
+= How to check this plugin is working? =
+
+After enabling options in 'Settings > FB Comments', open any page or post and you can see the Facebook comment box.
+
+= How this plugin works? =
+
+This plugin hooks into the WordPress content area or replace WordPress native comment and displays Facebook Comment on posts and pages.
+
+= Will it requires editing code to show Facebook Comment box? =
+
+Not at all. You can show the Facebook comments by just installing this plugin. Use the Plugin Options to customize the plugin settings according to your need.
+
+= Is this plugin compatible with any themes? =
+
+Yes, this plugin is compatible with any theme.
+
+= I want to migrate from other Facebook comments plugin. What are the steps? =
+
+Just copy Facebook App ID form your exisitng plugin and copy App Secret from Facebook Developer Account and paste these two on plugin settings page and this plugin will do the rest. Also, please configure plugin setting according to your need.
+
+= How to show Facebook comment count on front end posts meta? =
+
+In this case, you have to edit your theme's template files i.e. single.php, page.php etc. And add/replace default published date function with this:
+
+Returns the facebook comments count:
+
+`<?php if ( function_exists( 'get_fb_comment_count' ) ) {
+		get_fb_comment_count();
+	}
+?>`
+
+Displays/echos the facebook comments count:
+
+`<?php if ( function_exists( 'fb_comment_count' ) ) {
+		fb_comment_count();
+	}
+?>`
+
+== Screenshots ==
+
+1. Facebook Comment Box
+2. Page loading speed with lazy load
+3. Main Settings
+4. Plugin Settings
+5. Display Settings
+6. Title Settings
+7. GDPR Notice
+8. Notification
+9. Others Settings
+10. Facebook Comment Box Demo
+
+== Changelog ==
+
+= 1.4.8 =
+Release Date: March 28, 2022
+
+* Fixed Typo.
+
+= 1.4.7 =
+Release Date: March 27, 2022
+
+* Updated: Facebook SDK Version to v13.0.
+* Tested with WordPress 5.9.
+
+= 1.4.6 =
+Release Date: June 28, 2020
+
+* Updated: Facebook SDK Version to v7.0.
+* Twaek: Auto Fetch Comment Count on every Post Save Action.
+* Tweak: Added Reset button warnings.
+* Fixed: Some typos.
+* Tested with WordPress 5.4.
+
+= 1.4.5 =
+Release Date: November 11, 2019
+
+* Updated: Facebook SDK Version to v5.0.
+* Fixed: Some untranslated strings.
+* Fixed: Some typos.
+* Fixed: Some broken links.
+* Change the plugin name properly to avoid copyright infringement.
+* Tested with WordPress 5.3.
+
+= 1.4.4 =
+Release Date: September 29, 2019
+
+* Updated: Facebook SDK Version to v4.0.
+* Improved: Properly validating the $_POST request.
+* Removed: Some unused codes.
+* Change the plugin name to avoid copyright infringement.
+
+= 1.4.3 =
+Release Date: June 15, 2019
+
+* Added: Support to replace wordpress comment count with facebook comments count on frontend.
+* Updated: Facebook SDK Version to v3.3.
+* Tweak: WP Editor Media button will be hidden from now.
+* Tested with WordPress 5.2.
+
+= 1.4.2 =
+Release Date: April 22, 2019
+
+* Added: Support for post id in commnet count template tags.
+* Added: Some filters to customize comment count text output.
+* Added: span class and data-href in comment count output.
+* Tweak: Reduced plugin size.
+* Fixed: Conflict with Bootstrap CSS Class.
+* Fixed: Missing HTML Tags in Admin Notice.
+* Removed: Some CSS Files.
+
+= 1.4.1 =
+Release Date: March 13, 2019
+
+* Added: Support for WooCommerece Comments.
+
+= 1.4.0 =
+Release Date: March 9, 2019
+
+* Added: A method to automatically fetch comment count of a certain post if comment count meta doesn't exist.
+* Added: Some Shortcodes attributes to customize frontend output via shortcode.
+* Improved: The lazy loading mechanism to optimize page speed.
+* Improved: The Javascript codes which is liable for unnecessary SDK loading.
+* Improved: Compatibility with other Facebook Plugin.
+* Improved: AJAX Security Mechanism.
+* Tweak: Now Shortcode also supports Lazy loading methods - On Click and On Scroll.
+* Tweak: Now this plugin automatically disables the output of Facebook Comments in AMP pages created by AMP for WP Plugin.
+* Tweak: Facebook Comment Count will always enable from now. You can hide it from Screen Options.
+* Tweak: Facebook Comment Application Secret now uses password type field.
+* Fixed: A issue with Shortcode if shortcode is not in Post Content.
+* Fixed: A Shortcode CSS issue. 
+* Fixed: Duplicate HTML Element warning in browser console on Admin Settings Page.
+* Removed: Some unwanted code from plugin codebase.
+* Removed: Facebook SDK Loading Method option in plugin settings.
+
+= Other Versions =
+
+* View the <a href="https://plugins.svn.wordpress.org/ultimate-facebook-comments/trunk/changelog.txt" target="_blank">Changelog</a> file.
+
+== Upgrade Notice ==
